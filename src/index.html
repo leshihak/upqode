@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="stylesheet"
+            href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+        <link rel="shortcut icon" href="./favicon.ico" />
+        <title>Upqode</title>
+    </head>
+    <body>
+        <header id="home">
+            <div class="topnav" id="myTopnav">
+                <div class="logo-header">UPQODE</div>
+                <div class="header-links">
+                    <a href="#home" class="nav-links" class="active">Home</a>
+                    <a href="#services" class="nav-links">Services</a>
+                    <a href="#team" class="nav-links">Team</a>
+                    <a href="#contact" class="nav-links">Contact Us</a>
+                    <a
+                        href="javascript:void(0);"
+                        class="icon"
+                        onclick="openBurger()"
+                    >
+                        <img src="./images/open-menu.svg" class="menu-open" />
+                    </a>
+                </div>
+            </div>
+        </header>
+
+        <div class="container">
+            <main>
+                <!-- banner  -->
+                <section>
+                    <div class="video-background">
+                        <div id="player"></div>
+                    </div>
+                    <div class="content">
+                        <div
+                            id="demo"
+                            class="carousel slide"
+                            data-ride="carousel"
+                        >
+                            <ul class="carousel-indicators">
+                                <li
+                                    data-target="#demo"
+                                    data-slide-to="0"
+                                    class="active"
+                                ></li>
+                                <li data-target="#demo" data-slide-to="1"></li>
+                                <li data-target="#demo" data-slide-to="2"></li>
+                            </ul>
+
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <span>First slide label</span>
+                                    <p>
+                                        Motivation And Your Personal Vision An
+                                        Unbeatable Force
+                                    </p>
+                                    <button class="banner-btn">
+                                        Start Free Trial
+                                    </button>
+                                </div>
+                                <div class="carousel-item">
+                                    <span>Second slide label</span>
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur
+                                        adipiscing elit.
+                                    </p>
+                                    <button class="banner-btn">
+                                        Start Free Trial
+                                    </button>
+                                </div>
+                                <div class="carousel-item">
+                                    <span>Third slide label</span>
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur
+                                        adipiscing elit.
+                                    </p>
+                                    <button class="banner-btn">
+                                        Start Free Trial
+                                    </button>
+                                </div>
+                            </div>
+
+                            <a
+                                class="carousel-control-prev"
+                                href="#demo"
+                                data-slide="prev"
+                            >
+                                <span class="carousel-control-prev-icon"></span>
+                            </a>
+                            <a
+                                class="carousel-control-next"
+                                href="#demo"
+                                data-slide="next"
+                            >
+                                <span class="carousel-control-next-icon"></span>
+                            </a>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- team  -->
+                <section id="team">
+                    <div class="team">
+                        <div class="employee julia flex">
+                            <div class="employee-details julia-block show">
+                                <div class="employee_name">
+                                    Julia Harrington
+                                </div>
+                                <div class="employee_job">Art Director</div>
+                                <div class="employee_description">
+                                    Have you ever had a problem with a burned
+                                    light? Thanks to the effort of Thomas Edison
+                                    we no longer need to invent a light bulb. We
+                                    just go to the store or our cupboard and
+                                    pull one out and screw it in. When we are
+                                    feeling so low and deep in the pits, this is
+                                    when we need light to see our way through.
+                                </div>
+                                <div class="employee_contacts">
+                                    <div class="employee-network">Facebook</div>
+                                    <div class="employee-network">Linkedin</div>
+                                    <div class="employee-network">Twitter</div>
+                                </div>
+                                <div class="employee-carousel">
+                                    <div
+                                        class="employee-carousel_block bellNext"
+                                    >
+                                        <img
+                                            src="./images/Inga-Andreieva-scaled.jpg"
+                                            alt="team"
+                                            class="team-img-next"
+                                        />
+                                        <div class="carousel-block_btns">
+                                            <div class="team-direction">
+                                                <div class="carousel-direction">
+                                                    NEXT
+                                                </div>
+                                                <img
+                                                    src="./images/arrow-right.svg"
+                                                    alt="arrow"
+                                                    class="arrow-team"
+                                                />
+                                            </div>
+                                            <div class="team-direction-name">
+                                                Minnie Bell
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="employee-carousel_block">
+                                        <div class="carousel-block_btns">
+                                            <div class="team-direction">
+                                                <div class="carousel-direction">
+                                                    PREV
+                                                </div>
+                                                <img
+                                                    src="./images/arrow-left.svg"
+                                                    alt="arrow"
+                                                    class="arrow-team"
+                                                />
+                                            </div>
+                                            <div class="team-direction-name">
+                                                ...
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <img
+                                src="./images/Kostirya-scaled.jpg"
+                                alt="team"
+                                class="team-img julia-img show"
+                            />
+                        </div>
+
+                        <div class="employee bell unset">
+                            <div class="employee-details bell-block hide">
+                                <div class="employee_name">
+                                    Minnie Bell
+                                </div>
+                                <div class="employee_job">Art Designer</div>
+                                <div class="employee_description">
+                                    Have you ever had a problem with a burned
+                                    light? Thanks to the effort of Thomas Edison
+                                    we no longer need to invent a light bulb. We
+                                    just go to the store or our cupboard and
+                                    pull one out and screw it in. When we are
+                                    feeling so low and deep in the pits, this is
+                                    when we need light to see our way through.
+                                </div>
+                                <div class="employee_contacts">
+                                    <div class="employee-network">Facebook</div>
+                                    <div class="employee-network">Linkedin</div>
+                                    <div class="employee-network">Twitter</div>
+                                </div>
+                                <div class="employee-carousel">
+                                    <div
+                                        class="employee-carousel_block benNext"
+                                    >
+                                        <img
+                                            src="./images/Bitmap.png"
+                                            alt="team"
+                                            class="team-img-next"
+                                        />
+                                        <div class="carousel-block_btns">
+                                            <div class="team-direction">
+                                                <div class="carousel-direction">
+                                                    NEXT
+                                                </div>
+                                                <img
+                                                    src="./images/arrow-right.svg"
+                                                    alt="arrow"
+                                                    class="arrow-team"
+                                                />
+                                            </div>
+                                            <div class="team-direction-name">
+                                                Ben Roberts
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="employee-carousel_block juliaPrev"
+                                    >
+                                        <img
+                                            src="./images/Kostirya-scaled.jpg"
+                                            alt="team"
+                                            class="team-img-next"
+                                        />
+                                        <div class="carousel-block_btns">
+                                            <div class="team-direction">
+                                                <div class="carousel-direction">
+                                                    PREV
+                                                </div>
+                                                <img
+                                                    src="./images/arrow-left.svg"
+                                                    alt="arrow"
+                                                    class="arrow-team"
+                                                />
+                                            </div>
+                                            <div class="team-direction-name">
+                                                Julia Harrington
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <img
+                                src="./images/Inga-Andreieva-scaled.jpg"
+                                alt="team"
+                                class="team-img bell-img second-img"
+                            />
+                        </div>
+
+                        <div class="employee roberts unset">
+                            <div class="employee-details roberts-block hide">
+                                <div class="employee_name">
+                                    Ben Roberts
+                                </div>
+                                <div class="employee_job">Director</div>
+                                <div class="employee_description">
+                                    Have you ever had a problem with a burned
+                                    light? Thanks to the effort of Thomas Edison
+                                    we no longer need to invent a light bulb. We
+                                    just go to the store or our cupboard and
+                                    pull one out and screw it in. When we are
+                                    feeling so low and deep in the pits, this is
+                                    when we need light to see our way through.
+                                </div>
+                                <div class="employee_contacts">
+                                    <div class="employee-network">Facebook</div>
+                                    <div class="employee-network">Linkedin</div>
+                                    <div class="employee-network">Twitter</div>
+                                </div>
+                                <div class="employee-carousel">
+                                    <div class="employee-carousel_block">
+                                        <div class="carousel-block_btns">
+                                            <div class="team-direction">
+                                                <div class="carousel-direction">
+                                                    NEXT
+                                                </div>
+                                                <img
+                                                    src="./images/arrow-right.svg"
+                                                    alt="arrow"
+                                                    class="arrow-team"
+                                                />
+                                            </div>
+                                            <div class="team-direction-name">
+                                                ...
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="employee-carousel_block bellPrev"
+                                    >
+                                        <img
+                                            src="./images/Inga-Andreieva-scaled.jpg"
+                                            alt="team"
+                                            class="team-img-next"
+                                        />
+                                        <div class="carousel-block_btns">
+                                            <div class="team-direction">
+                                                <div class="carousel-direction">
+                                                    PREV
+                                                </div>
+                                                <img
+                                                    src="./images/arrow-left.svg"
+                                                    alt="arrow"
+                                                    class="arrow-team"
+                                                />
+                                            </div>
+                                            <div class="team-direction-name">
+                                                Minnie Bell
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <img
+                                src="./images/Bitmap.png"
+                                alt="team"
+                                class="team-img roberts-img third-img"
+                            />
+                        </div>
+                    </div>
+                </section>
+
+                <!-- contact  -->
+                <section id="contact">
+                    <div class="contact">
+                        <div class="contact-block">
+                            <div class="contact-address-map">
+                                <div class="contact-address-header">
+                                    <div class="contact-address_title">
+                                        Meet us in Your City
+                                    </div>
+                                    <div class="current-address">
+                                        2005 Stokes Isle Apt. 896, Venaville,
+                                        New York 10010
+                                    </div>
+                                </div>
+                                <div class="contact-address-main">
+                                    <div
+                                        class="contact-address-cities-block losAngeles"
+                                    >
+                                        <img src="./images/map.svg" alt="" />
+                                        <div class="company-address">
+                                            <span class="contact-city"
+                                                >Los Angeles, USA</span
+                                            >
+                                            <span class="contact-address">
+                                                2005 Stokes Isle Apt. 896,
+                                                Venaville, Los Angeles 10010
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="contact-address-cities-block newYork"
+                                    >
+                                        <img src="./images/map.svg" alt="" />
+                                        <div class="company-address">
+                                            <span class="contact-city"
+                                                >New York, USA</span
+                                            >
+                                            <span class="contact-address">
+                                                2005 Stokes Isle Apt. 896,
+                                                Venaville, New York 10010
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="contact-address-cities-block boston"
+                                    >
+                                        <img src="./images/map.svg" alt="" />
+                                        <div class="company-address">
+                                            <span class="contact-city"
+                                                >Boston, USA</span
+                                            >
+                                            <span class="contact-address">
+                                                2005 Stokes Isle Apt. 896,
+                                                Venaville, Boston 10010
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="contact-address-cities-block detroit"
+                                    >
+                                        <img src="./images/map.svg" alt="" />
+                                        <div class="company-address">
+                                            <span class="contact-city"
+                                                >Detroit, USA</span
+                                            >
+                                            <span class="contact-address">
+                                                2005 Stokes Isle Apt. 896,
+                                                Venaville, Detroit 10010
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="contact-map">
+                                <div id="map"></div>
+                            </div>
+                        </div>
+
+                        <div class="address-map-block">
+                            <div class="address-map-city">New York</div>
+                            <div class="current-address-map">
+                                2005 Stokes Isle Apt. 896, Venaville, New York
+                                10010
+                            </div>
+                            <div class="address-map_contacts">
+                                <div class="address-map_header">
+                                    <img
+                                        src="./images/Clock - simple-line-icons.svg"
+                                        alt=""
+                                    />
+                                    <div class="address-map_title">
+                                        Work Schedule
+                                    </div>
+                                </div>
+                                <div class="address-map_subtitle">
+                                    <b>Mon - Sat: </b>11:00-19:00,
+                                </div>
+                                <div class="address-map_subtitle">
+                                    <b>Sun: </b>11:00-16:00
+                                </div>
+                            </div>
+                            <div class="address-map_contacts">
+                                <div class="address-map_header">
+                                    <img src="./images/phone.svg" alt="" />
+                                    <div class="address-map_title">
+                                        Head Office
+                                    </div>
+                                </div>
+                                <div class="address-map_subtitle">
+                                    (0043) 568 456 902
+                                </div>
+                                <div class="address-map_subtitle">
+                                    (0043) 568 456 902
+                                </div>
+                            </div>
+                            <div class="address-map_contacts">
+                                <div class="address-map_header">
+                                    <img src="./images/mail.svg" alt="" />
+                                    <div class="address-map_title">
+                                        Head Office
+                                    </div>
+                                </div>
+                                <div class="address-map_subtitle">
+                                    hello@pad.architecture
+                                </div>
+                                <div class="address-map_subtitle">
+                                    support@pad.architecture
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+            <img src="./images/upload.svg" alt="arrow" class="comeback" />
+        </div>
+
+        <footer>
+            <div class="footer-block">
+                <div class="logo-footer">UPQODE</div>
+                <div class="footer-nav">
+                    <a href="#home" class="footer-nav_link">Home</a>
+                    <a href="#services" class="footer-nav_link">Services</a>
+                    <a href="#team" class="footer-nav_link">Team</a>
+                    <a href="#contact" class="footer-nav_link">Contact Us</a>
+                </div>
+                <div class="footer-rights">
+                    © UpQode 2019. All Right Reserved.
+                </div>
+            </div>
+        </footer>
+        <!-- script  -->
+        <script
+            async
+            defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBDa0XYD4n9uAhOAYUjVFHsbbwxzd1P4uU&callback=initMap"
+        ></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    </body>
+</html>
